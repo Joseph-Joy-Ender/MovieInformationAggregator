@@ -1,0 +1,158 @@
+*{
+    font-family: Tahoma, serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    /*background: linear-gradient(#000000 50%, #ffb92a 50%);*/
+    background: linear-gradient(to right, blue, pink);
+
+}
+
+.head{
+    color: #ffb92a;
+    padding-left: 25rem;
+}
+
+.wrapper{
+    position: absolute;
+    background-color: #9361bf;
+    /*background-color: black;*/
+    width: 100rem;
+    max-width: 38em;
+    margin: 20px auto;
+    border-radius: 6px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.2);
+    box-sizing: border-box;
+    padding: 3em 1.8em;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border: 1px solid lightgray;
+    font-size: 16px;
+    top: 50%;
+    left: 40%;
+}
+
+.searchWrapper{
+    display: flex;
+    gap: 1.2rem;
+}
+
+.searchWrapper input,
+.searchWrapper button{
+    font-size: 1rem;
+    outline: none;
+    border-radius: 0.3em;
+}
+
+.searchWrapper input{
+    background-color: transparent;
+    border: 1px solid #a0a0a0;
+    padding: 0.7em;
+    color: white;
+    font-size: 1.3rem;
+    width: 20rem;
+}
+.searchWrapper button{
+    background-color: #ffb92a;
+    border: none;
+    cursor: pointer;
+    width: 8rem;
+}
+
+#result{
+  color: white;
+}
+
+.info{
+    position: relative;
+    display: grid;
+    grid-template-columns: 5fr 9fr;
+    margin-top: 1.2em;
+    align-items: center;
+}
+h2{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+}
+.poster{
+    width: 100%;
+}
+.rating img{
+   width: 1.2em;
+
+}
+
+.rating{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6em;
+    margin: 0.6em 0 0.9em 0;
+}
+
+.rating h4{
+    display: inline-block;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.details{
+    display: flex;
+    font-size: 0.95em;
+    gap: 1em;
+    justify-content: center;
+    color: #a0a0a0;
+    margin: 0.6em 0;
+    font-weight: 300;
+}
+
+.genre{
+    display: flex;
+    justify-content: space-around;
+}
+
+.genre div{
+    border: 1px solid #a0a0a0;
+    font-size: 0.75em;
+    padding: 0.4em 1.6em;
+    border-radius: 0.4em;
+    font-weight: 300;
+}
+
+h3{
+    font-weight: 500;
+    margin-top: 1.2em;
+}
+
+p{
+    font-size: 0.9em;
+    font-weight: 300;
+    line-height: 1.8em;
+    text-align: justify;
+    color: #a0a0a0;
+}
+
+.msg{
+    text-align: center;
+}
+
+@media screen and (max-width: 600px){
+    .wrapper{
+        font-size: 14px;
+    }
+
+    .info{
+        grid-template-columns: 1fr;
+    }
+    .poster{
+        margin: auto;
+        width: auto;
+        max-height: 10.8em;
+    }
+}
