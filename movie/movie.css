@@ -19,7 +19,8 @@ body{
 
 .wrapper{
     position: absolute;
-    background-color: #9361bf;
+    /*background-color: #9361bf;*/
+    background-color: gray;
     /*background-color: black;*/
     width: 100rem;
     max-width: 38em;
